@@ -22,11 +22,11 @@
 
                
                 <ul>
-                    <li><a href="/Default.aspx">Home</a></li>
-                    <li><a href="/guitarras/acusticas.aspx">Guitarras</a></li>
-                    <li><a href="/clientes/Login.aspx">Iniciar sesión</a></li>
-                    <li><a href="/Clientes/registrarse.aspx">Registrarse</a></li>
-                    <li><a href="/Contactanos/Contacts.aspx">Contactanos</a></li>
+                    <li><a href="/Default.aspx">Inicio</a></li>
+                    <li><a href="/instrumentos/acusticas.aspx">Guitarras</a></li>
+                    <li><a href="/clientes/login.aspx">Iniciar sesión</a></li>
+                    <li><a href="/clientes/registrarse.aspx">Registrarse</a></li>
+                    <li><a href="/Contacto/Contacto.aspx">Contactanos</a></li>
 
                     
                 </ul>
@@ -36,8 +36,8 @@
                     <img src="http://data.bloggif.com/distant/user/store/f/1/4/2/e7e20341993b0dfabd2a6e1988b6241f.png" alt="Montaje creado Bloggif" />
                     </div>
                 <div id="titulo">
-                    <h1>GShopp</h1>
-                    <h2>"All You Can Play"</h2>
+                    <h1>G Shop</h1>
+                    <h3>"All You Can Play"</h3>
                     </div>
                 &nbsp;&nbsp;&nbsp;
                 </div>
