@@ -19,7 +19,7 @@ public class conexion
      * CON
      * BASE DE DATOS */
 
-    SqlConnection con = new SqlConnection("Data Source=.\\express;Initial Catalog=Tiendaguitarras;Integrated Security=True;Pooling=False");
+    SqlConnection con = new SqlConnection("Data Source =.\\express; Initial Catalog = Tiendaguitarras; Integrated Security = True; Pooling=False");
     public SqlCommand comando;
 
     //METODO CONECTAR//
@@ -109,7 +109,7 @@ public class conexion
 
         try
         {
-            SqlConnection con1 = new SqlConnection("Data Source=.\\express;Initial Catalog=Tiendaguitarras;Integrated Security=True;Pooling=False");
+            SqlConnection con1 = new SqlConnection("Data Source =.\\express; Initial Catalog = Tiendaguitarras; Integrated Security = True; Pooling = False");
             con1.Open();
             string cadsql = "SELECT *FROM Registro WHERE usuario ='" + busca + "'";
             SqlCommand comando = new SqlCommand(cadsql, con1);
@@ -117,16 +117,11 @@ public class conexion
 
             if (leer.Read() == true)
             {
-                sesion se = new sesion();
+               
                 nombre = leer["nombre"].ToString();
                 apellido = leer["apellido"].ToString();
                 contra = leer["contraseña"].ToString();
-
-                se.usuario = nombre + "" + apellido;
-
-            
-
-
+                
 
             }
         }

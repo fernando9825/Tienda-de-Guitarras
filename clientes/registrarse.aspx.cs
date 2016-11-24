@@ -11,11 +11,25 @@ public partial class clientes_registrarse : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        try
+        {
+            if (Session["persona"].ToString() != null)
+            {
+                Response.Redirect("../default.aspx");
+            }
+            else
+            {
 
+            }
+        }
+        catch (Exception)
+        {
+
+        }
     }
 
     public string cliente;
-    sesion se = new sesion();
+    
     conexion con = new conexion();
     protected void registrarse_Click(object sender, EventArgs e)
     {
@@ -31,7 +45,7 @@ public partial class clientes_registrarse : System.Web.UI.Page
                 string script = "alert(\"Hello!\");";
                 ScriptManager.RegisterStartupScript(this, GetType(),
                "ServerControlScript", script, true);
-                se.usuario = txtusuario.Text;
+                
 
 
 

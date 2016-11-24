@@ -9,10 +9,10 @@ public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        persona se = new persona();
+       
         try
         {
-            lblusuario.Text = Session["perso"].ToString();
+            lblusuario.Text = Session["persona"].ToString();
         }
         catch
         {
