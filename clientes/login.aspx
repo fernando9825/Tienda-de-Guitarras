@@ -26,6 +26,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentMenuContextual1" Runat="Server">
+    <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <h2 class="auto-style5">Inicie sesión para poder comprar en Guitar Shop.</h2>

@@ -40,6 +40,7 @@
                     <h3>"All You Can Play"</h3>
                     </div>
                 &nbsp;&nbsp;&nbsp;
+                <asp:Label ID="labelsesion" runat="server" Text="Invitado"></asp:Label>
                 </div>
             </div>
         <div id="bajo"></div>

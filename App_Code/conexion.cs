@@ -117,14 +117,14 @@ public class conexion
 
             if (leer.Read() == true)
             {
-
+                sesion se = new sesion();
                 nombre = leer["nombre"].ToString();
                 apellido = leer["apellido"].ToString();
                 contra = leer["contraseña"].ToString();
 
-                saludoClass sal = new saludoClass();
+                se.usuario = nombre + "" + apellido;
 
-                sal.saludotxt = nombre;
+            
 
 
 

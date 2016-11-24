@@ -4,10 +4,10 @@ using System.Linq;
 using System.Web;
 
 /// <summary>
-/// Descripción breve de sesion
+/// Descripción breve de persona
 /// </summary>
-public class sesion
+public class persona
 {
-    public string usuario;
-   
+
+    public string perso;
 }

@@ -15,12 +15,27 @@ public partial class clientes_login : System.Web.UI.Page
     protected void Button1_Click(object sender, EventArgs e)
     {
         conexion con = new conexion();
+        sesion se = new sesion();
         con.busca = loginusuario.Text;
         con.buscar();
+        if (con.busca == loginusuario.Text & con.contra == logincontra.Text)
+        {
+
+            Session["persona"] = con.nombre + "" + con.apellido;
+            Response.Write(se.usuario);
+            Label1.Text = Session["persona"].ToString();
+            Session["persona"] = se.usuario;
+            
+            
+                        
+        }
         if (con.contra == logincontra.Text)
         {
             string script = "alert('Hola " + con.nombre + " " + con.apellido + " Bienvenido! ')";
             ScriptManager.RegisterStartupScript(this, typeof(Page), "Informacion", script, true);
+            
+          
+           
         }
         else
         {
